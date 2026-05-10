@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { initSocket, emitAgentUpdate } from "@/lib/socket";
 
-export const runtime = "node";
+export const runtime = "nodejs";
 
 export async function GET(req: NextRequest) {
   const socketServer = (req as any).socket?.server;
